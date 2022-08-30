@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Bài 4</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Silkscreen:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<style>
+			@font-face {
+				font-family: font-cua-toi-regular;
+				src: url(./font/Silkscreen-Regular.ttf);
+			}
+			@font-face {
+				font-family: font-cua-toi-bold;
+				src: url(./font/Silkscreen-Bold.ttf);
+			}
+			html {
+				padding: 30px;
+			}
+			h3 {
+				border-bottom: 1px solid yellow;
+			}
+			h1 {
+				font-variant: small-caps;
+				text-transform: uppercase;
+			}
+			.bai-4 {
+				border: 5px solid red;
+				padding: 30px;
+			}
+
+			#bai-4-tt {
+				border: 5px solid green;
+				padding: 30px;
+				height: 600px;
+			}
+			.mau-do {
+				color: red;
+			}
+			.nen-mau-xanh {
+				background-color: rgba(0, 0, 255, 0.514);
+				color: white;
+			}
+			.vd1 {
+				background-color: #f2ba04ae;
+				position: relative;
+				height: 300px;
+				font-family: Helvetica;
+			}
+			.vd2 {
+				background-color: rgba(255, 0, 0, 0.531);
+				position: absolute;
+				height: 100px;
+				top: 0;
+				width: 100px;
+			}
+			.change-font-1 {
+				font-family: silkscreen;
+				font-size: 50px;
+			}
+			.change-font-2 {
+				font-family: font-cua-toi-bold;
+				font-size: 50px;
+			}
+			.canh-le {
+				width: 300px;
+				height: 300px;
+				background-color: orange;
+				text-align: center;
+			}
+			.general {
+				width: 20%;
+				height: 30px;
+			}
+			.block {
+				background-color: red;
+				display: block;
+			}
+			.inline {
+				background-color: green;
+				display: inline;
+			}
+			.inline-block {
+				background-color: yellow;
+				display: inline-block;
+			}
+			.box-model {
+				border-right: 5px solid black;
+				padding: 20px 5px 0 15px;
+				margin: 30px;
+				background-color: green;
+			}
+			.box-sizing {
+				display: inline-block;
+				width: 48%;
+				border: 20px solid black;
+				margin: 0;
+				box-sizing: border-box;
+			}
+			a {
+				display: inline-block;
+				width: 100px;
+				height: 30px;
+				padding: 30px;
+				text-align: center;
+			}
+			a:hover {
+				border-bottom: 8px solid green;
+			}
+			a:visited {
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="bai-4">
+			<h1 style="color: red">Bài 4 - ngày 28 tháng 08 năm 2022</h1>
+			<h3>Màu đỏ</h3>
+			<h1 style="font-style: oblique">Ví dụ 2 - h1</h1>
+			<h1 style="font-style: italic">Ví dụ 2 - h1</h1>
+			<h4 class="mau-do">The h4</h4>
+			<div id="vi-du">
+				<h1>Bài 4 tiếp theo - ngày 30-08-2022</h1>
+				<div class="mau-do nen-mau-xanh">Hello cac ban</div>
+				<h3 class="mau-do">Xin chao</h3>
+			</div>
+			<div id="bai-4-tt">Hello</div>
+			<a href="#bai-4-tt">To ID</a>
+			<a href="#vi-du">Vi du</a>
+			<div class="vd1">
+				Ví dụ về độ trong 1
+				<div class="vd2">12</div>
+			</div>
+			<div class="change-font-1">Ví dụ về font-family - chèn link css</div>
+			<div class="change-font-2">Ví dụ về font-family tự tạo (download font về)</div>
+			<div style="font-variant: small-caps; font-size: 30px">Ví dụ về in hoa nhỏ</div>
+			<div style="text-transform: uppercase; font-size: 30px">
+				Ví dụ về in hoa thông thường
+			</div>
+			<div class="canh-le">Canh lề</div>
+			<hr />
+			<h2>Ví dụ về block và inline</h2>
+			<div class="inline general">Đây là thẻ inline</div>
+			<div class="block general">Đây là <b>thẻ block</b></div>
+			<div class="inline-block general">Đây là thẻ inline-block</div>
+			<div class="inline general">Đây là thẻ inline</div>
+
+			<hr />
+			<h1>Giới thiệu về box-model</h1>
+			<div class="box-model">Box-model</div>
+			<div class="box-sizing">Box-sizing 1</div>
+			<div class="box-sizing">Box-sizing 2</div>
+			<hr />
+			<h1>Áp dụng CSS cho link và list</h1>
+			<a href="https://fonts.google.com/" target="_blank"> Thẻ a</a>
+		</div>
+	</body>
+</html>
