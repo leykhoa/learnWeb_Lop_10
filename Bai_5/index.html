@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Bài 5: CSS Selector</title>
+		<style>
+			* {
+				color: green;
+			}
+			#test-id {
+				color: green;
+			}
+			#header {
+				background-color: yellow;
+			}
+			header {
+				font-size: 50px;
+				color: yellow;
+			}
+			.header {
+				font-size: 15px;
+			}
+
+			.thumb {
+				border: 5px solid #0006cc;
+				width: 20%;
+			}
+			img[alt='Joe'] {
+				height: 300px;
+			}
+			div > h3 {
+				color: pink;
+			}
+			div + p {
+				background-color: yellow;
+			}
+
+			h6 ~ ul {
+				background: #ff0000a1;
+			}
+            main {
+                background-image: url('./images/Bo-suu-tap-1001-hinh-anh-mang-dep-an-tuong-nhat-nam-2021.jpg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                Opacity:0.8;
+
+            }
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1 style="text-align: center; color: red">Bài 5. CSS Selectors - ngày 06/09/2022</h1>
+		</header>
+		<main>
+			<h1 id="header">Đây là ID</h1>
+			<h2 class="header">Đây là ID 2</h2>
+			<a></a>
+			<hr />
+			<h1>Ví dụ về class</h1>
+			<img
+				src="./images/Bo-suu-tap-1001-hinh-anh-mang-dep-an-tuong-nhat-nam-2021.jpg"
+				alt="Joe"
+				class="thumb"
+			/>
+
+			<img src="./images/download.jpeg" alt="Bacon" class="thumb" />
+
+			<img src="./images/lay-net-01.png" alt="Tweety" class="thumb" />
+			<hr />
+			<h1>Ví dụ về cha con</h1>
+			<div>
+				<h3>Đây là thẻ con</h3>
+			</div>
+			<h3>Không set giá trị</h3>
+
+			<h1>Ví dụ về selector anh em kế cận (+)</h1>
+
+			<div>
+				<h2>My name is Donald</h2>
+				<p>I live in Duckburg.</p>
+			</div>
+
+			<p>My best friend is Mickey 22222.</p>
+
+			<p>My best friend is Mickey.</p>
+
+			<p>I will not be styled.</p>
+
+			<h1>Ví dụ về anh em chung (~)</h1>
+
+			<ul>
+				<li>Coffee 1</li>
+				<li>Tea 1</li>
+				<li>Milk 1</li>
+			</ul>
+
+			<p>The first paragraph.</p>
+
+			<ul>
+				<li>Coffee 2</li>
+				<li>Tea 2</li>
+				<li>Milk 2</li>
+			</ul>
+			<h6>Hello</h6>
+			<h2>Another list</h2>
+			<ul>
+				<li>Coffee 3</li>
+				<li>Tea 3</li>
+				<li>Milk 3</li>
+			</ul>
+
+			<ul>
+				<li>Coffee 4</li>
+				<li>Tea 4</li>
+				<li>Milk4</li>
+			</ul>
+			<hr />
+			<h1>Viêt gộp</h1>
+			<p>
+				margin: 10px = 
+                <p>margin-top: 10px; margin-right: 10px; margin-bottom: 10px;
+				margin-left: 10px</p>;
+			</p>
+            <p>
+				margin: 10px 15px = 
+                <p>margin-top: 10px; margin-right: 15px; margin-bottom: 10px;
+				margin-left: 15px</p>;
+
+
+			</p>
+            <h1> CSS gradient: https://www.w3schools.com/css/css3_gradients.asp</h1>
+		</main>
+	</body>
+</html>
