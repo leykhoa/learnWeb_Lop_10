@@ -1,0 +1,62 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	border: 5px solid green;
+}
+
+header {
+	padding: 20px;
+	margin: 20px;
+	color: orange;
+}
+.title {
+	color: red;
+	text-align: center;
+	padding-bottom: 20px;
+}
+.calendar {
+	text-align: center;
+}
+table {
+	margin: 0 auto;
+	width: 500px;
+	border: 2px solid orange;
+	border-radius: 0 0 15px 15px;
+	padding: 10px;
+	overflow: hidden;
+	border-collapse: collapse;
+}
+thead tr th {
+	padding-bottom: 10px;
+}
+caption {
+	font-weight: bold;
+	background-color: orange;
+	padding: 5px;
+	border-radius: 15px 15px 0 0;
+}
+tr:nth-child(even) {
+	background-color: #dddddd;
+}
+td {
+	padding: 5px;
+}
+td:hover {
+	background-color: red;
+}
+.not-in-month {
+	color: grey;
+}
+.not-in-month:hover {
+	background-color: white;
+}
+.sun {
+	color: red;
+}
+tfoot {
+	background-color: orange;
+	border-radius: 0 0 15px 15px;
+}
