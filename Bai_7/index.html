@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Bài 7</title>
+		<link rel="stylesheet" href="./style.css" />
+		<script>
+			//sử dụng hàm -- học ở các bài sau
+			function handleClick() {
+				//khai báo biến là có kiểu dữ liệu string
+				let name = 'Tutor Khoa';
+
+				//khai báo biến là có kiểu dữ liệu Object
+				var student = {
+					name: 'Peter',
+
+					age: 23,
+
+					address: '711-2880 Nulla St.Mankato Mississippi',
+				};
+
+				// Tạo cảnh báo
+				alert('Title is ' + document.title);
+				alert('Get name student ' + student.name);
+				alert('Get age student ' + student.age);
+			}
+
+			//sử dụng hàm -- học ở các bài sau
+			const handlePrompt = () => {
+				let a = 15 % 4;
+				let x = 2;
+				x += 5;
+
+				//function tạo prompt
+				prompt('Enter your name ' + name);
+
+				//function tạo console.log()
+				console.log('Phần dư của phép tính', a);
+				console.log('Phép tính +=', x);
+				console.log('Boolean', 10 > 15);
+				console.log('Phủ định', !(10 > 15));
+			};
+
+			//sử dụng hàm -- học ở các bài sau
+			function handleId() {
+
+				//Khai báo biến lấy DOM
+				let getId = document.getElementById('test');
+
+				//
+				getId.innerHTML = ' Xin chào, các bạn hiểu không?';
+				console.log('check color', getId.style.color);
+				ten = 'Hello';
+				let b = 2;
+				b = 4;
+				const c = 3;
+
+				console.log('check ten', ten);
+
+				if (getId.style.color === 'red') {
+					getId.style.color = 'green';
+				} else {
+					getId.style.color = 'red';
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<header><h1>Bài 7. Biến, kiểu dữ liệu, phép toán - ngày 20.09.2022</h1></header>
+		<main>
+			<div>
+				<h3>Giới thiệu về JavaScript và tài liệu</h3>
+				<a href="https://www.w3schools.com/js/default.asp" target="_blank">W3School</a>
+				<br />
+				<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"
+					>developer.mozilla</a
+				>
+				<br />
+				<a
+					href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/"
+					target="_blank"
+					>Thực hành JavaScript</a
+				>
+			</div>
+
+			<button onclick="handleClick()">Click me</button>
+			<h1 onclick="handlePrompt()">Prompt to</h1>
+			<button onclick="handleId()">Change id</button>
+			<div id="test" style="color: red">Hello</div>
+		</main>
+	</body>
+</html>
