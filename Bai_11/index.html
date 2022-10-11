@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Bài 11. Form & Validation</title>
+		<style>
+			header {
+				padding: 50px 0;
+				text-align: center;
+				color: red;
+			}
+			main {
+				text-align: center;
+				height: 1000px;
+			}
+			form {
+				width: 300px;
+				background-color: rgb(158, 158, 226);
+				margin: 0 auto;
+				text-align: left;
+				border-radius: 10px;
+				padding: 20px;
+			}
+			form div {
+				padding: 10px 0;
+			}
+			label {
+				width: 50px !important;
+			}
+			.table {
+				width: 60%;
+			}
+			.table button {
+				width: 30%;
+				margin: 1px;
+			}
+		</style>
+	</head>
+	<body>
+		<header><h1>Bài 11. Form & Validation - ngày 04.10.2022</h1></header>
+		<main>
+			<form action="">
+				<div>
+					<label for="name">Name</label>
+
+					<input type="text" name="name" id="name" onchange="handleOnChange()" /><br />
+					<p class="error"></p>
+				</div>
+				<div>
+					<label for="email">Email</label>
+
+					<input type="email" name="email" id="email" /><br />
+				</div>
+				<div>
+					<label for="password">Password</label>
+
+					<input type="password" name="password" id="birth" />
+				</div>
+
+				<div>
+					<label for="birth">Birth</label>
+
+					<input type="date" name="birth" id="birth" /><br />
+				</div>
+				<div>
+					<label for="age">Age</label>
+
+					<input type="number" name="age" id="age" min="18" max="65" />
+				</div>
+				<!-- <input type="submit" value="Submit" /> -->
+				<button onclick="handleSubmit()">Submit</button>
+			</form>
+			<div>
+				<div class="title">Phep tinh</div>
+				<div>Bang tinh</div>
+				<div class="table">
+					<button>1</button>
+					<button>2</button>
+					<button>3</button>
+					<button>4</button>
+					<button>5</button>
+					<button>6</button>
+					<button>7</button>
+					<button>8</button>
+					<button>9</button>
+					<button>0</button>
+				</div>
+				<br />
+				<input type="text" value="0" readonly="readonly" />
+				<br />
+				<br />
+				<div>
+					<button>+</button>
+					<button>-</button>
+					<button>X</button>
+					<button>/</button>
+					<button>Result</button>
+				</div>
+			</div>
+		</main>
+		<script src="js/script.js"></script>
+	</body>
+</html>

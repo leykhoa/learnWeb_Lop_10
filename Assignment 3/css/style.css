@@ -1,0 +1,12 @@
+header {
+	padding: 50px 0;
+	text-align: center;
+	color: red;
+}
+nav a {
+	text-decoration: none;
+	padding: 20px;
+}
+nav {
+	text-align: center;
+}
