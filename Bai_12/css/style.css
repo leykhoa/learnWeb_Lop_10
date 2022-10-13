@@ -1,0 +1,54 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	width: 100%;
+}
+
+header {
+	padding: 50px;
+	text-align: center;
+	color: red;
+}
+
+.col {
+	border: 2px solid black;
+	width: 33%;
+	display: inline-block;
+	height: 150px;
+}
+.red {
+	background-color: red;
+}
+.green {
+	background-color: green;
+}
+.orange {
+	background-color: orange;
+}
+
+.column {
+	float: left;
+	width: 33.33%;
+	padding: 15px;
+	border: 2px solid red;
+}
+@media only screen and (max-width: 600px) {
+	body {
+		background-color: rgba(158, 158, 178, 0.542);
+	}
+	.column {
+		width: 100%;
+	}
+}
+@media (hover: hover) {
+	body {
+		background-color: rgba(158, 158, 178, 0.542);
+	}
+	.column {
+		width: 100%;
+		color: black;
+	}
+}
