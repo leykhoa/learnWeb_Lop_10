@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3</title>
+    <style>
+        header {
+            padding: 50px 0;
+            text-align: center;
+            color: red
+        }
+
+        a {
+            text-decoration: none
+        }
+
+        main {
+            text-align: center;
+        }
+    </style>
+    <link rel="stylesheet" href="../css/contact.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Assignment 3 - 11.10.2022</h1>
+    </header>
+    <main>
+        <div id="form">
+            <h2>Contact me</h2>
+            <label for="name">Your name</label>
+            <input type="text" id="name" placeholder="Please enter your full name!">
+            <p class="error" id="error-name"></p>
+            <label for="email">Your email</label>
+            <input type="email" id="email" placeholder="Please enter your email!">
+            <p class="error" id="error-email"></p>
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" />
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Write something.." row="5"></textarea>
+            <button onclick="handleSubmit()">Send message</button>
+        </div>
+    </main>
+    <script type="text/javascript" src="../js/contact.js"></script>
+</body>
+
+</html>

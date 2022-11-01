@@ -1,0 +1,39 @@
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+}
+main {
+	width: 100%;
+	text-align: center;
+}
+#form {
+	width: 500px;
+}
+#form input,
+textarea {
+	width: 60%;
+	margin: 10px;
+}
+textarea {
+	vertical-align: middle;
+}
+#form label {
+	width: 30%;
+	text-align: left;
+	display: inline-block;
+}
+
+button {
+	background-color: rgb(90, 90, 243);
+	border: none;
+	border-radius: 5px;
+	padding: 5px;
+}
+.error {
+	color: red;
+}

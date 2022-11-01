@@ -1,0 +1,164 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+:root {
+	--color-background-nav: #7430f9;
+}
+a:visited {
+	color: red;
+}
+body {
+	height: 2000px;
+}
+header {
+	text-align: center;
+	color: red;
+	padding: 50px;
+}
+main {
+	width: 90%;
+	margin: 0 auto;
+	border: 5px solid green;
+	height: 1000px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#banner {
+	background-image: url('../images/banner.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 300px;
+	position: relative;
+}
+.banner-title {
+	background-color: rgba(255, 192, 203, 0.739);
+	position: absolute;
+	bottom: 30px;
+	width: 100%;
+	padding: 5px;
+	font-size: 1.5rem;
+	text-align: center;
+	font-weight: bold;
+	color: white;
+}
+
+#banner-2 {
+	position: relative;
+}
+.banner-title-2 {
+	background-color: rgba(246, 196, 103, 0.62);
+	position: absolute;
+	bottom: 30px;
+	width: 100%;
+	padding: 5px;
+	font-size: 2em;
+	text-align: center;
+	font-weight: bold;
+	color: white;
+}
+.banner-description {
+	width: 100%;
+	position: absolute;
+	font-weight: bold;
+	text-align: center;
+	top: 20%;
+	font-size: 1.3em;
+	color: white;
+	z-index: 3;
+	text-shadow: 1px 1px black;
+}
+
+/* css nav */
+nav {
+	width: 100%;
+	position: relative;
+	font-weight: bold;
+}
+nav ul {
+	background-color: var(--color-background-nav);
+	padding-top: 15px;
+	width: 100%;
+}
+
+.btn-menu {
+	border: none;
+	float: right;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	background-color: rgba(255, 255, 255, 0);
+	font-size: 2.5em;
+}
+
+nav ul li {
+	display: inline-block;
+	padding: 10px;
+	width: 100%;
+}
+nav li a {
+	text-decoration: none;
+}
+nav ul li:hover {
+	background-color: var(--color-background-nav);
+	color: white;
+}
+nav li {
+	position: relative;
+}
+nav li ol {
+	display: none;
+	left: 0px;
+	width: 100%;
+}
+
+nav li:hover ol {
+	background-color: rgba(253, 253, 253, 0.736);
+	display: block;
+	width: 100%;
+	border-radius: 10px;
+}
+nav li:hover ol li {
+	display: block;
+	width: inherit;
+}
+nav ol li:hover a {
+	color: black !important;
+}
+
+/* css for tablets */
+@media only screen and (min-width: 768px) {
+	.btn-menu {
+		display: none;
+	}
+	#menu-ul {
+		display: block;
+	}
+	nav ul li {
+		display: inline-block;
+		padding: 10px;
+		width: 32%;
+		text-align: center;
+	}
+
+	nav li:hover ol {
+		position: absolute;
+		padding: 5px;
+		margin-top: 5px;
+		width: 100%;
+		background-color: var(--color-background-nav);
+		border-radius: 0;
+	}
+	nav li ol li:hover {
+		background-color: white;
+		border-radius: 5px;
+	}
+	nav li:hover a {
+		color: white;
+	}
+}
+
+/* css for desktop */
+@media only screen and (min-width: 1200px) {
+}

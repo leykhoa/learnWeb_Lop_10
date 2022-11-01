@@ -13,7 +13,8 @@
         }
 
         main {
-            width: 500px
+            width: 100%;
+            min-width: 300px;
         }
 
         input,
@@ -24,9 +25,12 @@
             border: 1px solid #ccc;
             border-radius: 4px;
             box-sizing: border-box;
-            margin-top: 6px;
-            margin-bottom: 5px;
+            margin: 5px 0px;
             resize: vertical;
+        }
+
+        textarea {
+            vertical-align: top;
         }
 
         button[id=submit] {
@@ -49,12 +53,66 @@
         .container {
             border-radius: 5px;
             background-color: #f2f2f2;
-            padding: 20px 100px;
+            width: 100%;
+            padding: 10% 5%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .container>div {
+            width: 100%;
+        }
+
+        .container div:nth-last-child(1) {
+            width: 100%;
         }
 
         .error {
             color: red;
             text-align: center;
+        }
+
+        @media screen and (min-width: 576px) {
+            .container>div {
+                width: 60%;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            .container>div {
+                width: 46%;
+                margin: 0 2%
+            }
+        }
+
+        @media screen and (min-width: 1200px) {
+            .container>div {
+                width: 46%;
+                margin: 0 2%
+            }
+
+            label {
+                width: 25%;
+                display: inline-block;
+            }
+
+            input,
+            select,
+            textarea {
+                width: 70%;
+            }
+        }
+
+        .test {
+            height: 50px;
+            border: 1px solid green;
+            display: flex;
+        }
+
+        .test>div {
+            background-color: red;
+            height: 30px;
+            flex: 1
         }
     </style>
 </head>
@@ -64,22 +122,33 @@
         <h1>Hướng dẫn Assignment 3</h1>
     </header>
     <main>
+        <div class="test">
+            <div></div>
+            <div></div>
+        </div>
         <h3>Contact Me</h3>
         <div class="container">
-            <label for="name">Your name</label>
-            <input type="text" id="name" name="name" placeholder="Your name.." onchange="handleOnChange()">
-            <p class="error" id="error-name"></p>
-            <label for="email">Your email</label>
-            <input type="email" id="email" name="emailfdsf" placeholder="Your email.." onchange="handleOnChange()">
-            <p class=" error" id="error-email"></p>
-            <label for="subject">Your subject</label>
-            <input type="text" id="subject" name="subject" placeholder="Subject.." onchange="handleOnChange()">
-            <p class="error" id="error-subject"></p>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
-            <p class="error" id="error-message"></p>
-            <button onclick="handleSubmit()" id="submit">Submit</button>
-            <p class="error" id="error-submit"></p>
+            <div>
+                <label for="name">Your name</label>
+                <input type="text" id="name" name="name" placeholder="Your name.." onchange="handleOnChange()">
+                <p class="error" id="error-name"></p>
+            </div>
+            <div><label for="email">Your email</label>
+                <input type="email" id="email" name="emailfdsf" placeholder="Your email.." onchange="handleOnChange()">
+                <p class=" error" id="error-email"></p>
+            </div>
+            <div> <label for="subject">Your subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Subject.." onchange="handleOnChange()">
+                <p class="error" id="error-subject"></p>
+            </div>
+            <div><label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+                <p class="error" id="error-message"></p>
+            </div>
+            <div>
+                <button onclick="handleSubmit()" id="submit">Submit</button>
+                <p class="error" id="error-submit"></p>
+            </div>
         </div>
     </main>
     <script type="text/javascript" src="../js/script.js"></script>

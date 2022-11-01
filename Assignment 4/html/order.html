@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="stylesheet" href="../css/order.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div id="form">
+            <h2>Order now</h2>
+            <label for="cake-name">Cake name</label>
+            <select id="cake-name" onchange="handleOnChange() ">
+                <option value="0">---Select cake---</option>
+                <option value="1">Classic Yellow Cake</option>
+                <option value="2">Coconut Bundt Cake</option>
+                <option value="3">Cream Cheese Cake</option>
+                <option value="4">German Chocolate Cake</option>
+            </select>
+            <img src="" id="img-cake" width='300' alt='' />
+            <p class="error" id="error-cake-name"></p>
+            <label for="name">Your name</label>
+            <input type="name" id="name" placeholder="Please enter your name!">
+            <p class="error" id="error-name"></p>
+            <label for="Message">Message</label>
+            <input type="text" id="message" />
+            <label for="includes">Includes</label>
+            <div class="radio-group">
+                <input type="checkbox" name="candles" id="candles" value='candles' />
+                <label for="candles">Candles</label>
+                <input type="checkbox" name="firework" id="firework" value='firework' />
+                <label for="firework">Firework</label>
+                <input type="checkbox" name="toys" id="toys" value='toys' />
+                <label for="toys">Toys</label>
+            </div>
+            <label for="deliver-date">Deliver Date</label>
+            <input type="date" id="deliver-date" />
+            <label for="deliver-to">Deliver to</label>
+            <textarea id="deliver-to" placeholder="Write something.." row="5"></textarea>
+            <label for="yes">Call before deliver?</label>
+            <input type="radio" id="yes" name='call' />
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name='call' />
+            <label for="no">No</label>
+            <div>
+                <button onclick="handleSubmit()">Send message</button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../js/order.js"></script>
+</body>
+
+</html>
